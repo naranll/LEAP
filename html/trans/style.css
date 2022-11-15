@@ -1,0 +1,23 @@
+button {
+    background-color: aqua;
+    height: 200px;
+    width: 300px;
+    border: none;
+    border-radius: 30px;
+    font-size: 40px;
+}
+ 
+button:hover {
+    background-color: blue;
+    color:white;
+    cursor: pointer;
+    transition: background-color 2s 5s, width 5s ease-in-out;
+    width: 600px;
+}
+
+button:active {
+    background-color: black;
+    transition: background-color 2s;
+}
+
+/* make form with windows wtc */
