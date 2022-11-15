@@ -13,12 +13,6 @@ ul {
     gap: 20px;
 }
 
-/* li {
-    padding: 2px;
-    background-color: aliceblue;
-}  */
-
-
 @media screen and (max-width: 768px) {
     header {
         display: block;
