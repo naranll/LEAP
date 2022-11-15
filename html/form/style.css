@@ -6,10 +6,15 @@ form {
     flex-direction: column;
     gap: 10px;
 } 
- body {
-    background-color: antiquewhite;
-    padding: 20px;
+body {
+    background-color: rgb(116, 125, 136);
+    max-width: 500px;
+    margin: 5em auto;
+ }
+
+ input {
+    border-radius: 5px;
  }
  button {
-    width: 500px;
+    max-width: 500px;
  }
