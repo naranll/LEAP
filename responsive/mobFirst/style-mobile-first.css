@@ -20,6 +20,7 @@ header {
 .name {
   width: 70%;
   background-color: #fe889f;
+  color: #fff;
   padding-left: 20px;
 }
 
@@ -90,6 +91,21 @@ section {
   padding: 4px;
   border-radius: 5px;
   border: 2px solid white;
+  width: min-content;
+  text-align: center;
+}
+
+h5 {
+  margin: 0;
+}
+
+.textpart {
+  height: 100px;
+  background-color: beige;
+}
+
+.descrip {
+  background-color: tomato;
 }
 
 
@@ -125,6 +141,15 @@ section {
     width: 70%;
     flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  .titlerow {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .descrip {
+    display: none;
   }
 }
 
@@ -167,4 +192,11 @@ section {
   .bigText {
     width: 70%;
   }
+
+  .titlerow {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  
 }
