@@ -19,3 +19,19 @@ alert(cm + "cm = " + ctoi + "inch");
 inc = parseFloat(prompt("Lenght in inch: "));
 itoc = inc * 2.54;
 alert(inc + "inch = " + itoc + "cm");
+
+//21. 
+let radius, p, v;
+const pi = 3.14;
+radius = parseFloat(prompt("Enter circle radius: "));
+v = pi * Math.pow(radius, 3) * 4 / 3;
+p = 2 * pi * radius;
+alert("Volume = " + v.toFixed(2));
+alert("Perimetre = " + p);
+
+//22. 
+let threeDig, firstDig, temp;
+threeDig = parseFloat(prompt("Enter a three digit number: "));
+temp = (threeDig - (threeDig % 10)) / 10;
+firstDig = (temp - (temp % 10)) / 10;
+alert("First digit " + firstDig);
