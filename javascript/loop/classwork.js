@@ -65,3 +65,4 @@ while (day < 30) {
 }
 
 console.log(mon);
+
