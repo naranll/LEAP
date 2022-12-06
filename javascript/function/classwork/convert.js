@@ -1,23 +1,21 @@
 // 1.find method 2. use function
 
-// let word = "QwerTYuio";
-let word = prompt("Enter string to convert");
-
-/*
+/* let word = "QwerTYuio";
 let wordnew = "";
+
 for (let i = 0; i < word.length; i++) {
-    if (word.charCodeAt(i) >= 65 & word.charCodeAt(i) < 91) {
-        // word.charCodeAt(i) += 32; doesn't work so..
-        wordnew += (word.charAt(i)).toLowerCase();
-        // console.log("upper");
+    if (word.charCodeAt(i) >= 65 && word.charCodeAt(i) < 91) {
+        // word.charCodeAt(i) += 32; doesn't work in JS
+        wordnew += (word.charAt(i)).toLowerCase();      
     } else {
         wordnew += (word.charAt(i)).toUpperCase();
-        // console.log("lower");
     }
 }
+
 console.log(wordnew);
 */
 
+let word = prompt("Enter string to convert");
 function convert(input) {
     let output = "";
     for (let i = 0; i < input.length; i++) {
@@ -32,4 +30,5 @@ function convert(input) {
 
 console.log(convert(word));
 alert(convert(word));
+
 
