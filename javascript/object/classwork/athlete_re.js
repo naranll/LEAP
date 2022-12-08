@@ -51,9 +51,6 @@ function getAverSpeed(arr) {
     return (allsum / arr.length).toFixed(1);
 }
 
-function getAllInfo(arr) {
-    
-}
 
 console.log(getNames(athletes));
 console.log(getAverAge(athletes));
