@@ -10,7 +10,7 @@ let athletes = [
         record: [30, 25, 41, 42],
     },
     {
-        name: "Sky",
+        name: "Sk0",
         age: 19,
         record: [40, 21, 35, 63],
     },
