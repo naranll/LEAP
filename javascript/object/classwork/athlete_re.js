@@ -55,3 +55,15 @@ function getAverSpeed(arr) {
 console.log(getNames(athletes));
 console.log(getAverAge(athletes));
 console.log(getAverSpeed(athletes));
+
+
+/*
+function getNames(arr, keyName) {
+    let names = [];
+    for (let i = 0; i < arr.length; i++) {
+        names.push(arr[i].keyName);
+    }
+    return names;
+}
+console.log(getNames(athletes, name));
+*/
