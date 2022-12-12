@@ -7,6 +7,7 @@ boxy.style.backgroundColor = "blue";
 // rootEl.style.display = "flex";
 // boxy.style.display = "flex";
 rootEl.style.height = "600px";
+rootEl.style.width = "600px";
 
 let wid = 50;
 setInterval ( function () {
