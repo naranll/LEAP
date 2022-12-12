@@ -36,6 +36,15 @@ function findGender() {
     return boys + '/'+ girls;
 }
 
+function addName(){
+    let lname = "Sambuu";
+    let newnames = [];
+    for(let i = 0; i <students.length; i++) {
+       students[i].name = (students[i].name).concat(lname);
+       newnames[i] = students[i].name;
+    }   
+    return newnames;
+}
 
 function avrAge() {
     let ages = 0;
@@ -47,8 +56,14 @@ function avrAge() {
 
 function sameAge(){
     let same = [];
+    for(let i = 0; i<students.length; i++) {
+        same.push(students[i].age);
+    }
+    return same;
 }
 
 console.log("Male/Female:", findGender());
+console.log(addName());
 console.log("Average age:", avrAge());
+console.log(sameAge());
 
