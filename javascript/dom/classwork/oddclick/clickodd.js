@@ -16,8 +16,8 @@ function clickOdd() {
         let myDivs = document.createElement("div");
         myDivs.style.width = "100px";
         myDivs.style.height = "100px";
-        myDivs.style.border = "2px solid black";
-        myDivs.style.borderRadius = "50%"
+        myDivs.style.border = "2px solid white";
+        myDivs.style.borderRadius = "10%"
 
         myDivs.style.backgroundColor = `rgb(${myRed},${myGre},${myBlu})`;
         rootEl.appendChild(myDivs);
