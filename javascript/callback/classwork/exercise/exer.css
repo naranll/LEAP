@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(113, 172, 172);
+    height: 200vh;
+    
+}
+
+#show {
+    position: fixed;
+    bottom: 5px;
+    background-color: aliceblue;
+}
