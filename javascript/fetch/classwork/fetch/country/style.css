@@ -26,6 +26,13 @@ body {
   align-items: center;
 }
 
+.entries {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  
+}
+
 .countries {
   /* margin-bottom: 8rem; */
   display: flex;
@@ -97,9 +104,6 @@ body {
   font-size: 2.4rem;
 }
 
-form {
-  margin-top: 3rem;
-}
 .btn-country {
   border: 1px solid black;
   font-size: 2rem;
