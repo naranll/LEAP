@@ -71,4 +71,34 @@ prius.addEventListener("click", () => {
 }
 )
 
+lexus.addEventListener("click", () => {
+    fetch("http://localhost:3333/api/cars")
+        .then((data) => data.json())
+        .then((data) => {
+            printLexus(data);
+        })
+        .catch(() => console.log("no"));
+}
+)
+function printLexus(carsdata) {
+    root.innerHTML = "";
+    carsdata.map((cars) => {
+        if (cars.brand == "Lexus") {
+            console.log(cars);
+            let newDiv = document.createElement("div");
+        newDiv.innerHTML = `
+        <div class="card" style="width: 18rem;">
+            <img src= "${cars.image}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${cars.model}</h5>
+                <p class="card-text">Brand:${cars.brand}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        `;
+        root.appendChild(newDiv);
+        }
+    })
+}
+
 //3) Input car info + pic
