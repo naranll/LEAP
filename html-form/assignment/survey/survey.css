@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+h4, h3, h1 {
+    margin: 4px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+header {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50vw;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputSqr {
+    width: 100%;
+    height: 30px;
+}
+
+#suggestBox {
+    display: flex;
+    flex-direction: column;
+}
