@@ -1,6 +1,7 @@
 const express = require("express");
 //added
 const cors = require("cors");
+const bodyParser = require("body-parser")
 
 let cars = [
   {
@@ -57,6 +58,7 @@ let index = cars.length;
 const app = express();
 //added
 app.use(cors());
+app.use(bodyParser())
 
 
 app.get("/api/cars", (req, res) => {

@@ -73,56 +73,28 @@ lexus.addEventListener("click", () => {
     .catch(() => console.log("no"));
 });
 
-//3) Create modal with input
-let newCar = document.createElement("div");
-newCar.innerHTML = `
-    <div class="modal fade" id="addCar" tabindex="-1" aria-labelledby="addNewCar" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="addNewCar">Add new car info</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body customColor">
-                <form>
-                    <input type="text" id="carModel" placeholder="Model" class="w-50 customColor"/>
-                    <input type="text" id="carBrand" placeholder="Brand" class="w-50"/>
-                    <input type="text" id="carImage" placeholder="Image link" class="w-50"/>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                    Cancel
-                </button>
-                <button type="button" class="btn btn-primary" id="addInfo" >Add</button>
-            </div>
-        </div>
-        </div>
-    </div> `;
-root.appendChild(newCar);
+//3) Send input to backend
+class Cars{
+  constructor(id, model, brand, image) {
+    this.id = id;
+    this.model = model;
+    this.brand = brand;
+    this.image = image;
+  }
+}
 
-//4) Send input to backend
 let addInfo = document.getElementById("addInfo");
-addInfo.addEventListener("click", () => {
-    let cmodel = getValue(document.querySelector("#carModel"));
-    let cbrand = getValue(document.querySelector("#carBrand"));
-    let cimglink = getValue(document.querySelector("#carImage"));
-    let newObj = {
-        model: `${cmodel}`,
-        brand: `${cbrand}`,
-        image: `${cimglink}`,
-    }
-    // console.log(newObj);
-    fetch("http://localhost:3333/api/cars", {
-        method: 'POST',
-        body: newObj,
-    })
-    .then((res) => res.json())
-    .then((res) => console.log(res))
-    .catch(() => console.log("fetch error"));
+addInfo.addEventListener("click", ()=> {
+  
+  fetch("http://localhost:3333/api/cars", {
+    method: "POST",
+    body: JSON.stringify( )
+  })
+  .then((data) => data.json())
+  .then((data) => {
     
+  })
+  
 })
 
-function getValue(inpt){
-    return inpt.value;
-}
+    
