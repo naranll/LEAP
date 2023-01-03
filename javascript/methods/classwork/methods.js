@@ -9,37 +9,37 @@ let arr3 = array.concat(arr2);
 console.log(arr3);
 
 //INCLUDES
-console.log(array.includes("Black" + "\n"));
+console.log(array.includes("Black") + "\n");
 
 //INDEXOF
 console.log(array.indexOf("Orange"));
 console.log(array.indexOf("Yellow", 3)+ "\n");    //after array[3]
 
 //JOIN
-console.log(array.join() + "\n");
+console.log(array.join('') + "\n");
 
 //POP
-let popped = array.pop();
+let popped = array.pop(); //saves popped element
 console.log(popped);
 console.log(array + "\n");
 
 //PUSH
-let pushed = array.push("Grey");
+let pushed = array.push("Grey"); //saves last index
 console.log(pushed);
 console.log(array + "\n");
 
 //SHIFT
-let shifted = array.shift();
+let shifted = array.shift(); //saves shifted element
 console.log(shifted);
 console.log(array + "\n");
 
 //UNSHIFT 
-let unsh = array.unshift("Red");
+let unsh = array.unshift("Red"); //saves array length
 console.log(unsh);
 console.log(array + "\n");
 
 //SORT
-console.log(array.sort() + "\n");
+console.log(array.sort() + "\n"); //align according to first letter or number
 
 //REVERSE
 console.log(array.reverse() + "\n");
