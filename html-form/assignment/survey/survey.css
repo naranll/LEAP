@@ -51,9 +51,18 @@ fieldset {
     height: 30px;
 }
 
-#userName:invalid {
-    border: 3px solid red;
+.inputSqr:required {
+    box-shadow: none;
 }
+
+.inputSqr:required:focus:invalid {
+    box-shadow: 0 0 2px 2px red;
+}
+
+.inputSqr:required:valid {
+    box-shadow: 0 0 3px 1px green;
+} 
+
 
 #suggestBox {
     display: flex;
