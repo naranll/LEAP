@@ -51,6 +51,10 @@ select {
     color: rgb(58, 58, 193);
 }
 
+.generalInfo input {
+    color: grey;
+}
+
 .contactDetails {
     background-color: rgb(58, 58, 193);
     border-radius: 0 15px 15px 0;
@@ -65,14 +69,13 @@ select {
     color: #fff;
 }
 
-.contactDetails select option {
-    color: rgb(58, 58, 193);
-}
-.contactDetails select option::placeholder {
+.contactDetails select {
     color: #fff;
 }
 
-
+.contactDetails select option {
+    color: rgb(58, 58, 193);
+}
 
 #terms a, a:hover, a:visited, a:active {
     color: inherit;
@@ -86,8 +89,8 @@ select {
 
 .rowInput {
     display: flex;
-    /* gap: 20px; */
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .rowInput input, .rowInput select{
@@ -96,5 +99,6 @@ select {
 
 button {
     width: 35%;
-    border-radius: 50%;
+    height: 36px;
+    border-radius: 20px;
 }
