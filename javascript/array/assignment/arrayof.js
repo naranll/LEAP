@@ -16,6 +16,6 @@ for (let i = 1; i < arrayOfNumbers.length; i++) {
     }
 }
 
-console.log(max + " " + min);
+console.log(max + " " + min +min);
 
 // 5,6 left
