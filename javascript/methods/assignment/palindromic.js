@@ -22,11 +22,11 @@ function check(word) {
     console.log("yes");
 }
 
-function cut(l,r) {
+function cut(l, r) {
     if (l[0] == r[0] && l.length > 0) {
         l = l.slice(1, l.length);
         r = r.slice(1, r.length);
-        cut(l,r);
+        cut(l, r);
     }
 }
 
